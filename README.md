@@ -123,8 +123,3 @@ Calculated **ingredient quantities** for predicted sales.
 **Step 1:** Clone this repository:
 ```bash
 git clone https://github.com/AkashDevelop/pizza-sales-forecasting.git
-
-
-
-
-
