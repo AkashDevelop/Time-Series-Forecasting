@@ -1,112 +1,126 @@
-# 🍕 Time Series Forecasting for Pizza Sales
+# 🍕 **Time Series Forecasting for Pizza Sales**
 
 **Capstone Project | Data Science | Machine Learning**  
 _Optimizing Ingredient Requirements for Efficient Inventory Management_
 
 ![Pizza Sales Forecasting](https://github.com/user-attachments/assets/70b6fc4b-1fa5-4b72-a79c-e58aac5c3c16)
 
+---
+
+## 🚀 **Project Overview**
+
+### 📊 **Problem Statement**
+- **Goal:** Predict pizza sales and optimize ingredient requirements to improve inventory efficiency.
+- Use **historical sales data** to forecast demand for the next 7 days.
+
+### 🎯 **Key Objectives**
+1. Develop an accurate **time series forecasting model**.
+2. Map predicted sales to **ingredient quantities**.
+3. Minimize waste and optimize **stock management**.
 
 ---
 
-## 🚀 Project Overview
+## 🔍 **Data Overview**
 
-### 📊 Problem Statement
-- Forecast daily pizza sales to predict ingredient requirements for inventory management.
-- **Goal:** Accurately predict the required quantity of ingredients for the next 7 days based on historical sales data.
+### 🗂 **Dataset Details**
+- **Period:** January 2015 – January 2016  
+- **Datasets:** `sales_data`, `ingredients_data`  
 
-### 📝 Objectives
-- Develop a forecasting model for pizza sales.
-- Calculate ingredient quantities based on the forecasted sales.
-- Optimize inventory stocking based on predicted demand.
-
----
-
-## 🔍 Data Overview
-
-### 🗂 Dataset
-- **Period:** January 2015 to January 2016
-- **datas:** `sales_data`, `ingredients_data`
-  
-### 🧹 Data Cleaning
-- Handled missing values in columns such as `pizza_name_id`, `pizza_category`, `pizza_ingredients`, etc.
-- Used appropriate imputation and removal strategies for clean data processing.
+### 🧹 **Data Cleaning**
+- Removed null values from `pizza_name_id`, `pizza_category`, and `pizza_ingredients`.
+- Applied appropriate **imputation strategies** and data preprocessing.  
 
 ---
 
-## 🔬 Exploratory Data Analysis (EDA)
+## 🔬 **Exploratory Data Analysis (EDA)**
 
-### 📉 Key Insights
-- Identified **seasonal** and **weekly** sales patterns.
-- Visualized sales trends to highlight high-demand and low-demand periods.
+### 📉 **Key Insights**
+- Sales exhibit **weekly** and **seasonal trends**.
+- Visualizations revealed high-demand days (weekends) and low-demand days.
 
 ---
 
-## 📅 Forecast for Next 7 Days
+## ⚙️ **Model Overview**
+
+### 📈 **Model Used**
+- **ARIMA (AutoRegressive Integrated Moving Average)** for time series forecasting.
+
+### 🎯 **Model Performance**
+- Achieved **Mean Absolute Percentage Error (MAPE):** `16.83%`
+
+---
+
+## 📅 **7-Day Sales Forecast**
 
 | Date       | Forecasted Sales (Units) |
 |------------|-------------------------|
 | 2016-01-01 | 797.68                  |
 | 2016-01-02 | 753.62                  |
 | 2016-01-03 | 763.14                  |
+| 2016-01-04 | 790.31                  |
+| 2016-01-05 | 808.55                  |
+| 2016-01-06 | 789.91                  |
+| 2016-01-07 | 770.48                  |
 
 ---
 
-## 🛠 Feature Engineering
+## 🍕 **Ingredient Requirement Forecast**
 
-### ✨ Features Used
-- Extracted features like **day of the week**, **month**, and **previous day’s sales**.
-- Modeled **seasonality** and **trend** for better prediction.
+### 🌱 **Ingredient Mapping to Forecasted Sales**
 
-## ⚙️ Model Overview
-
-### Model Chosen:
-- **ARIMA** for time series forecasting.
-
-### Accuracy:
-- Achieved a **MAPE of 16.83%** for forecast accuracy.
-
----
-
-## 🍕 Ingredient Requirement Forecast
-
-### 🌱 Ingredient Mapping
-Calculated ingredient quantities based on forecasted sales.
-
-#### Example Ingredients:
+Calculated **ingredient quantities** for predicted sales.
 
 | Ingredient          | Quantity (grams) |
 |----------------------|------------------|
 | Pepperoni           | 347.09           |
 | Mozzarella Cheese   | 259.55           |
 | Mushrooms           | 364.32           |
+| Dough               | 450.00           |
+| Tomato Sauce        | 200.25           |
 
 ---
 
-## 📊 Visualizations
+## 📊 **Visualizations**
 
- **Ingredient Requirements Bar Plot**  
-   ![Ingredient Bar Plot](https://github.com/user-attachments/assets/897b0002-b92b-44e8-8dcc-ba2476e6696b) 
+### **1️⃣ Sales Trends**
+- 📈 Time Series plot showcasing **daily sales trends**.
+<img src="https://github.com/user-attachments/assets/ea9b9b01-afeb-47f1-8128-e875f5128fbd" alt="Sales Trends" width="60%">
 
-
-
-✅ **Key Takeaways & Future Work**
-
-### 🎯 Key Takeaways
-- ARIMA was effective for forecasting ingredient requirements.  
-- Achieved a MAPE value of **16.83%**, suitable for real-world use.  
-  
+### **2️⃣ Ingredient Bar Plot**
+- **Ingredient Details**
+<img src="https://github.com/user-attachments/assets/897b0002-b92b-44e8-8dcc-ba2476e6696b" alt="Ingredient Bar Plot" width="50%">
 
 ---
 
-### 🛠 Tech Stack
-- **Programming Languages:** Python, SQL  
-- **Libraries/Tools:** Pandas, NumPy, ARIMA, Matplotlib, Seaborn, Jupyter Notebook  
+## ✅ **Key Takeaways**
+
+- **ARIMA** proved effective for time series sales forecasting.  
+- Achieved a **MAPE of 16.83%**, which is acceptable for real-world applications.  
 
 ---
 
-### 📝 Installation & Setup
+## 🔮 **Future Work**
+- Explore **SARIMA** to handle seasonal trends better.  
+- Integrate **promotional and discount data** for enhanced forecast accuracy.  
+- Incorporate **automated inventory alerts** to further optimize stock levels.
 
-**Clone this repository:**
+---
+
+## 🛠 **Tech Stack**
+
+| **Category**             | **Tools/Technologies**       |
+|---------------------------|------------------------------|
+| Programming Languages     | Python, SQL                 |
+| Libraries                 | Pandas, NumPy, ARIMA        |
+| Visualization             | Matplotlib, Seaborn         |
+| IDE/Tools                 | Jupyter Notebook            |
+| Data Storage              | SQLite                      |
+
+---
+
+## 📝 **Installation & Setup**
+
+**Step 1:** Clone this repository:
 ```bash
 git clone https://github.com/AkashDevelop/pizza-sales-forecasting.git
 
