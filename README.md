@@ -88,7 +88,7 @@ Calculated **ingredient quantities** for predicted sales.
 
 ### **2️⃣ Ingredient Bar Plot**
 - **Ingredient Details**
-<img src="https://github.com/user-attachments/assets/897b0002-b92b-44e8-8dcc-ba2476e6696b" alt="Ingredient Bar Plot" width="50%">
+<img src="https://github.com/user-attachments/assets/897b0002-b92b-44e8-8dcc-ba2476e6696b" alt="Ingredient Bar Plot" width="60%">
 
 ---
 
@@ -123,5 +123,8 @@ Calculated **ingredient quantities** for predicted sales.
 **Step 1:** Clone this repository:
 ```bash
 git clone https://github.com/AkashDevelop/pizza-sales-forecasting.git
+
+
+
 
 
