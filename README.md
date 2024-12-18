@@ -28,7 +28,9 @@ _Optimizing Ingredient Requirements for Efficient Inventory Management_
 
 ### 🧹 **Data Cleaning**
 - Removed null values from `pizza_name_id`, `pizza_category`, and `pizza_ingredients`.
-- Applied appropriate **imputation strategies** and data preprocessing.  
+- Applied appropriate **imputation strategies** and data preprocessing.
+- 
+![Objective)](https://github.com/user-attachments/assets/f672ca02-35a4-4b34-a67e-6592a93ce34c)
 
 ---
 
