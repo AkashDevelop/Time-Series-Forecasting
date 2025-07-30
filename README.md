@@ -1,4 +1,4 @@
-# 🍕 **Time Series Forecasting for Pizza Sales**
+#  **Time Series Forecasting for Pizza Sales**
 
 **Capstone Project | Data Science | Machine Learning**  
 _Optimizing Ingredient Requirements for Efficient Inventory Management_
